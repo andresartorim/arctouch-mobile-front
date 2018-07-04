@@ -1,2 +1,0 @@
-# arctouch-mobile-front
-arctouch
