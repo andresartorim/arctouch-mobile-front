@@ -8,7 +8,7 @@ class CrazePricingItem extends Component {
     let crazePricingClass = "CrazePricingItem" + (this.props.big ? " CrazePricingItem_big" : "");
     if(this.props.big) featureExtra = <li>Feature 6</li>;
     return (
-      <Col lg={3} md={3} xs={12} className={crazePricingClass}>
+      <Col lg={3} md={3} sm={3} className={crazePricingClass}>
         <div className="CrazePricingItem__title">
           {this.props.name}
         </div>
@@ -29,7 +29,7 @@ class CrazePricingItem extends Component {
           </ul>
         </div>
         <div className="CrazePricingItem__buttonSection">
-          <a href="#" className="CrazePricingItem__purchase">
+          <a href="javascript:return false;" className="CrazePricingItem__purchase">
             PURCHASE
           </a>
         </div>

@@ -25,6 +25,7 @@ import socialYoutube from '../../img/icons/social/youtube.png';
 /* COMPONENTS */
 import CrazeFeature     from '../CrazeFeature/CrazeFeature';
 import CrazePricingItem from '../CrazePricingItem/CrazePricingItem';
+import CrazeCarousel from '../CrazeCarousel/CrazeCarousel';
 
 class Craze extends Component {
   constructor(props) {
@@ -103,13 +104,13 @@ class Craze extends Component {
                 </Row>
                 <Row>
                   <Col className="CrazeHeader__sectionOS">
-                    <a href="#" className="CrazeHeader__OS">
+                    <a href="javascript:return false;" className="CrazeHeader__OS">
                       <img src={mac} />
                     </a>
-                    <a href="#" className="CrazeHeader__OS">
+                    <a href="javascript:return false;" className="CrazeHeader__OS">
                       <img src={android} />
                     </a>
-                    <a href="#" className="CrazeHeader__OS">
+                    <a href="javascript:return false;" className="CrazeHeader__OS">
                       <img src={windows} />
                     </a>
                   </Col>
@@ -178,44 +179,44 @@ class Craze extends Component {
                 className="CrazeAbout_player"
                 src="https://player.vimeo.com/video/253989945"
                 border="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen />
+                allowFullScreen />
             </Col>
           </Row>
         </div>
 
-        <div className="CrazeCaroulsel">
-
+        <div className="CrazeCarousel">
+          <CrazeCarousel />
         </div>
 
         <div className="CrazePricing">
-          <p className="CrazePricing__title">
-            Pricing Plans
-          </p>
-          <Row className="CrazePricing__container">
-            <Col lg={1} mdHidden smHidden xsHidden />
-            <Col lg={10} md={12} xs={12}>
-              <p className="CrazePricing__text">
-                Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
-              </p>
-            </Col>
-            <Col lg={1} mdHidden smHidden xsHidden />
-          </Row>
-          <Row className="CrazePricing__containerD">
-            {this.state.pricing.map(
-              (item, i) => {
-                return (
-                  <CrazePricingItem
-                    name={item.name}
-                    price={item.price}
-                    cents={item.cents}
-                    big={item.big}
-                  />
-                )
-              }
-            )}
-          </Row>
+          <div className="CrazePricing__wrapper">
+            <p className="CrazePricing__title">
+              Pricing Plans
+            </p>
+            <Row className="CrazePricing__container">
+              <Col lg={1} mdHidden smHidden xsHidden />
+              <Col lg={10} md={12} xs={12}>
+                <p className="CrazePricing__text">
+                  Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
+                </p>
+              </Col>
+              <Col lg={1} mdHidden smHidden xsHidden />
+            </Row>
+            <Row className="CrazePricing__containerD">
+              {this.state.pricing.map(
+                (item, i) => {
+                  return (
+                    <CrazePricingItem
+                      name={item.name}
+                      price={item.price}
+                      cents={item.cents}
+                      big={item.big}
+                    />
+                  )
+                }
+              )}
+            </Row>
+          </div>
         </div>
 
         <div className="CrazeGetInTouch">
@@ -226,12 +227,12 @@ class Craze extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
           </p>
           <ul className="CrazeGetInTouch__social">
-            <li><a href="#"><img src={socialTwitter} /></a></li>
-            <li><a href="#"><img src={socialFacebook} /></a></li>
-            <li><a href="#"><img src={socialPinterest} /></a></li>
-            <li><a href="#"><img src={socialGplus} /></a></li>
-            <li><a href="#"><img src={socialLinkedin} /></a></li>
-            <li><a href="#"><img src={socialYoutube} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialTwitter} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialFacebook} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialPinterest} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialGplus} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialLinkedin} /></a></li>
+            <li><a href="javascript:return false;"><img src={socialYoutube} /></a></li>
           </ul>
         </div>
       </div>
