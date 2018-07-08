@@ -1,0 +1,210 @@
+.CrazeHeader__logoSection {
+  padding-top: 145px;
+}
+.CrazeHeader__logoSection__subTitle {
+  padding-top: 50px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333333c9;
+}
+.CrazeHeader__sectionOS {
+  padding-top: 25px;
+}
+.CrazeHeader__OS {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .5;
+}
+.CrazeHeader__OS:hover {
+  opacity: 1;
+  transition: ease-in .14s .14s;
+}
+.CrazeHeader__row {
+  max-width: 1200px;
+}
+.CrazeHeader__hand {
+  padding-top: 87px;
+  text-align: center;
+}
+
+.CrazeFeatures {
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #222222;
+}
+.CrazeFeatures__subtitle {
+  padding-top: 30px;
+  color: #848484;
+  font-size: 16px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.CrazeAbout {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.CrazeAbout,
+.CrazeFooter,
+.CrazePricing {
+  background: #e7e7e7;
+}
+.CrazeAbout__container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 60px 15px;
+}
+.CrazeAbout__title,
+.CrazePricing__title,
+.CrazeGetInTouch__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.CrazeAbout__subContainer {
+  padding-top: 20px;
+}
+.CrazeAbout__text,
+.CrazeAbout__subItem,
+.CrazePricing__text,
+.CrazeGetInTouch__text {
+  font-size: 15.7px;
+  font-weight: lighter;
+  color: #848484;
+}
+.CrazeAbout__subItem {
+  margin-left: 20px;
+}
+.CrazeAbout__subItem::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.5em;
+  margin-bottom: 1px;
+  border-right: 0.16em solid black;
+  border-top: 0.16em solid black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.CrazeAbout_player {
+  border: 0;
+  width: 500px;
+  height: 310px;
+}
+
+.CrazeCaroulsel {
+  height: 290px;
+}
+
+.CrazePricing {
+  position: relative;
+  width: 100vw;
+  height: 580px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: #e5e5e5;
+  text-align: center;
+}
+.CrazePricing__wrapper {
+  position: relative;
+  margin: 0 auto !important;
+  max-width: 1200px;
+}
+.CrazePricing__title {
+  padding-top: 45px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.CrazeGetInTouch {
+  height: 310px;
+  padding-top: 125px;
+  text-align: center;
+}
+.CrazeGetInTouch__social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.CrazeGetInTouch__social li {
+  display: inline-block;
+  background: #e7e7e7;
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
+  line-height: 34px;
+  border-radius: 50%;
+}
+.CrazeGetInTouch__social li:hover {
+  background: #3498db;
+}
+.CrazeGetInTouch__social li:last-child {
+  margin-right: 0;
+}
+.CrazePricing__containerD {
+  position: absolute;
+  width: 100%;
+  top: 195px;
+  padding: 0 15px;
+}
+
+.noPadding {
+   padding: 0;
+   margin: 0 auto;
+}
+.row {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .CrazeAbout_player {
+    width: 415px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 767px) {
+  .CrazeHeader__logoSection {
+    padding-top: 55px;
+  }
+  .CrazeAbout_player {
+    width: 500px;
+    height: 310px;
+  }
+  .CrazePricing__containerD {
+    position: relative;
+    top: 0;
+  }
+  .CrazePricing {
+    height: auto;
+  }
+}
+
+@media (max-width: 571px) {
+  .CrazeAbout_player {
+    width: 199px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .CrazeAbout_player {
+    width: 415px;
+  }
+}
